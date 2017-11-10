@@ -1,9 +1,13 @@
 package org.whsrobotics.tshirtcannon2017.robot;
 
 import edu.wpi.first.wpilibj.IterativeRobot;
+import edu.wpi.first.wpilibj.command.Scheduler;
+import org.whsrobotics.tshirtcannon2017.subsystems.Pneumatics;
 
 public class Robot extends IterativeRobot {
 
+    public static Pneumatics pneumatics;
+    public static OI oi;
 
     /**
      * Robot-wide initialization code should go here.
@@ -19,7 +23,9 @@ public class Robot extends IterativeRobot {
     public void robotInit() {
         RobotMap.init();
 
+        pneumatics = Pneumatics.getInstance();
 
+        oi = new OI();
     }
 
     /**
@@ -88,6 +94,7 @@ public class Robot extends IterativeRobot {
      */
     @Override
     public void teleopPeriodic() {
+        Scheduler.getInstance().run();
         super.teleopPeriodic();
     }
 }
