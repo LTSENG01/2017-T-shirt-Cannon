@@ -22,6 +22,9 @@ public class OI {
         SmartDashboard.putData("Front Chamber Solenoid - START", new SetSingleSolenoid(Pneumatics.getFrontChamberSolenoid(), true));
         SmartDashboard.putData("Front Chamber Solenoid - STOP", new SetSingleSolenoid(Pneumatics.getFrontChamberSolenoid(), false));
 
+        SmartDashboard.putData("Charge Cannon Solenoid - START", new SetSingleSolenoid(Pneumatics.getChargeCannonTankSolenoid(), true));
+        SmartDashboard.putData("Charge Cannon Solenoid - STOP", new SetSingleSolenoid(Pneumatics.getChargeCannonTankSolenoid(), false));
+
     }
 
 }

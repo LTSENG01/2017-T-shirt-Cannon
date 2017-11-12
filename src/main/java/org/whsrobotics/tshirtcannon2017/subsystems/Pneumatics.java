@@ -10,6 +10,7 @@ public class Pneumatics extends Subsystem {
     private static Compressor compressor;
     private static Solenoid sprinklerValveSolenoid;
     private static Solenoid frontChamberSolenoid;
+    private static Solenoid chargeCannonTankSolenoid;
 
     private static Pneumatics instance;
 
@@ -36,12 +37,14 @@ public class Pneumatics extends Subsystem {
 
     public static void init() {
         compressor = new Compressor(0);
-        sprinklerValveSolenoid = new Solenoid(1);
         frontChamberSolenoid = new Solenoid(0);
+        sprinklerValveSolenoid = new Solenoid(1);
+        chargeCannonTankSolenoid = new Solenoid(2);
 
         compressor.setClosedLoopControl(false);
         setSingleSolenoid(sprinklerValveSolenoid, false);
         setSingleSolenoid(frontChamberSolenoid, false);
+        setSingleSolenoid(chargeCannonTankSolenoid, false);
     }
 
     public static boolean getCompressorState() {
@@ -70,6 +73,10 @@ public class Pneumatics extends Subsystem {
 
     public static Solenoid getFrontChamberSolenoid() {
         return frontChamberSolenoid;
+    }
+
+    public static Solenoid getChargeCannonTankSolenoid() {
+        return chargeCannonTankSolenoid;
     }
 
     public static void setSingleSolenoid(Solenoid solenoid, boolean state) {

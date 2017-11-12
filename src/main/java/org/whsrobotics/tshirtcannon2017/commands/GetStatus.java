@@ -26,11 +26,13 @@ public class GetStatus extends Command {
             SmartDashboard.putBoolean("Pressure Switch State", Pneumatics.getPressureSwitchState());
             SmartDashboard.putBoolean("Front Chamber Solenoid State", Pneumatics.getFrontChamberSolenoid().get());
             SmartDashboard.putBoolean("Sprinkler Valve State", Pneumatics.getSprinklerValveSolenoid().get());
+            SmartDashboard.putBoolean("Charge Cannon State", Pneumatics.getChargeCannonTankSolenoid().get());
         } catch (Exception ex) {
             System.err.println("Error with Pneumatics: " + ex);
         }
 
         // Drive Train
+
 
 
 

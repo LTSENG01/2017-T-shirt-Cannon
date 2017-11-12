@@ -31,6 +31,7 @@ public class Robot extends IterativeRobot {
 
         getStatus = new GetStatus();
         getStatus.setRunWhenDisabled(true);
+        getStatus.start();
 
     }
 
