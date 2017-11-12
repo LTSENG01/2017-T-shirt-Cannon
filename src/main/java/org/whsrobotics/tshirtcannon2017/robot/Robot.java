@@ -2,12 +2,15 @@ package org.whsrobotics.tshirtcannon2017.robot;
 
 import edu.wpi.first.wpilibj.IterativeRobot;
 import edu.wpi.first.wpilibj.command.Scheduler;
+import org.whsrobotics.tshirtcannon2017.commands.GetStatus;
 import org.whsrobotics.tshirtcannon2017.subsystems.Pneumatics;
 
 public class Robot extends IterativeRobot {
 
     public static Pneumatics pneumatics;
     public static OI oi;
+
+    GetStatus getStatus;
 
     /**
      * Robot-wide initialization code should go here.
@@ -24,8 +27,11 @@ public class Robot extends IterativeRobot {
         RobotMap.init();
 
         pneumatics = Pneumatics.getInstance();
-
         oi = new OI();
+
+        getStatus = new GetStatus();
+        getStatus.setRunWhenDisabled(true);
+
     }
 
     /**
@@ -36,7 +42,6 @@ public class Robot extends IterativeRobot {
      */
     @Override
     public void disabledInit() {
-        super.disabledInit();
     }
 
     /**
@@ -47,7 +52,6 @@ public class Robot extends IterativeRobot {
      */
     @Override
     public void teleopInit() {
-        super.teleopInit();
     }
 
     /**
@@ -62,7 +66,6 @@ public class Robot extends IterativeRobot {
      */
     @Override
     public void robotPeriodic() {
-        super.robotPeriodic();
     }
 
     /**
@@ -78,7 +81,6 @@ public class Robot extends IterativeRobot {
      */
     @Override
     public void disabledPeriodic() {
-        super.disabledPeriodic();
     }
 
     /**
@@ -95,6 +97,5 @@ public class Robot extends IterativeRobot {
     @Override
     public void teleopPeriodic() {
         Scheduler.getInstance().run();
-        super.teleopPeriodic();
     }
 }

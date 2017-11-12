@@ -8,8 +8,8 @@ import edu.wpi.first.wpilibj.command.Subsystem;
 public class Pneumatics extends Subsystem {
 
     private static Compressor compressor;
-    private static Solenoid sprinklerValveSolenoid; // Relay?
-    private static Solenoid frontChamberSolenoid; // Single Solenoid?
+    private static Solenoid sprinklerValveSolenoid;
+    private static Solenoid frontChamberSolenoid;
 
     private static Pneumatics instance;
 
@@ -77,6 +77,7 @@ public class Pneumatics extends Subsystem {
         solenoid.set(state);
     }
 
+    // We don't actually use a DoubleSolenoid
     public static void setDoubleSolenoid(DoubleSolenoid doubleSolenoid, DoubleSolenoid.Value value) {
         doubleSolenoid.set(value);
     }
