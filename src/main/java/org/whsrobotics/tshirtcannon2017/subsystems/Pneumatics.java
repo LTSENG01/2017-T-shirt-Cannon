@@ -37,8 +37,8 @@ public class Pneumatics extends Subsystem {
 
     public static void init() {
         compressor = new Compressor(0);
-        frontChamberSolenoid = new Solenoid(0);
-        sprinklerValveSolenoid = new Solenoid(1);
+        sprinklerValveSolenoid = new Solenoid(0);
+        frontChamberSolenoid = new Solenoid(1);
         chargeCannonTankSolenoid = new Solenoid(2);
 
         compressor.setClosedLoopControl(false);

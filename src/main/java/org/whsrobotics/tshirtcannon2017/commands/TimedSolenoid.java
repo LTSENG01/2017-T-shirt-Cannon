@@ -3,16 +3,16 @@ package org.whsrobotics.tshirtcannon2017.commands;
 import edu.wpi.first.wpilibj.Solenoid;
 import edu.wpi.first.wpilibj.command.Scheduler;
 import edu.wpi.first.wpilibj.command.TimedCommand;
+import org.whsrobotics.tshirtcannon2017.robot.Robot;
 import org.whsrobotics.tshirtcannon2017.subsystems.Pneumatics;
 
 public class TimedSolenoid extends TimedCommand {
-
-    SetSingleSolenoid setSingleSolenoid;
 
     Solenoid solenoid;
 
     public TimedSolenoid(Solenoid solenoid, double timeout) {
         super(timeout);
+        requires(Robot.pneumatics);
         this.solenoid = solenoid;
     }
 
@@ -21,7 +21,7 @@ public class TimedSolenoid extends TimedCommand {
      */
     @Override
     protected void initialize() {
-        setSingleSolenoid = new SetSingleSolenoid(solenoid, true);
+        Pneumatics.setSingleSolenoid(solenoid, true);
     }
 
     /**
@@ -30,7 +30,7 @@ public class TimedSolenoid extends TimedCommand {
      */
     @Override
     protected void end() {
-        setSingleSolenoid = new SetSingleSolenoid(solenoid, false);
+        Pneumatics.setSingleSolenoid(solenoid, false);
     }
 
     @Override
