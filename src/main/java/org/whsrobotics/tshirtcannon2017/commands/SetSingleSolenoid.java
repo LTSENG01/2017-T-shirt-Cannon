@@ -26,3 +26,4 @@ public class SetSingleSolenoid extends InstantCommand {
         return super.isFinished();
     }
 }
+

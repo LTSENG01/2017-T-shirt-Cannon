@@ -6,10 +6,15 @@ import org.whsrobotics.tshirtcannon2017.commands.StartCompressor;
 import org.whsrobotics.tshirtcannon2017.commands.StopCompressor;
 import org.whsrobotics.tshirtcannon2017.commands.TimedSolenoid;
 import org.whsrobotics.tshirtcannon2017.subsystems.Pneumatics;
+import org.whsrobotics.tshirtcannon2017.utils.XboxController;
 
 public class OI {
 
+    public static XboxController xboxController;
+
     public OI() {
+        xboxController = new XboxController(0);
+
         SmartDashboard.putData(new StartCompressor());
         SmartDashboard.putData(new StopCompressor());
 
@@ -21,6 +26,9 @@ public class OI {
 
         SmartDashboard.putData("Front Chamber Solenoid - START", new SetSingleSolenoid(Pneumatics.getFrontChamberSolenoid(), true));
         SmartDashboard.putData("Front Chamber Solenoid - STOP", new SetSingleSolenoid(Pneumatics.getFrontChamberSolenoid(), false));
+
+        SmartDashboard.putData("Shell Ejector Solenoid - START", new SetSingleSolenoid(Pneumatics.getShellEjectorSolenoid(), true));
+        SmartDashboard.putData("Shell Ejector Solenoid - STOP", new SetSingleSolenoid(Pneumatics.getShellEjectorSolenoid(), false));
 
         SmartDashboard.putData("Charge Cannon Solenoid - START", new SetSingleSolenoid(Pneumatics.getChargeCannonTankSolenoid(), true));
         SmartDashboard.putData("Charge Cannon Solenoid - STOP", new SetSingleSolenoid(Pneumatics.getChargeCannonTankSolenoid(), false));

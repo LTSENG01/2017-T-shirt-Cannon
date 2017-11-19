@@ -4,6 +4,7 @@ import edu.wpi.first.wpilibj.Compressor;
 import edu.wpi.first.wpilibj.DoubleSolenoid;
 import edu.wpi.first.wpilibj.Solenoid;
 import edu.wpi.first.wpilibj.command.Subsystem;
+import org.whsrobotics.tshirtcannon2017.robot.RobotMap;
 
 public class Pneumatics extends Subsystem {
 
@@ -11,6 +12,7 @@ public class Pneumatics extends Subsystem {
     private static Solenoid sprinklerValveSolenoid;
     private static Solenoid frontChamberSolenoid;
     private static Solenoid chargeCannonTankSolenoid;
+    private static Solenoid shellEjectorSolenoid;
 
     private static Pneumatics instance;
 
@@ -36,14 +38,16 @@ public class Pneumatics extends Subsystem {
     }
 
     public static void init() {
-        compressor = new Compressor(0);
-        sprinklerValveSolenoid = new Solenoid(0);
-        frontChamberSolenoid = new Solenoid(1);
-        chargeCannonTankSolenoid = new Solenoid(2);
+        compressor = new Compressor(RobotMap.PNEU_COMPRESSOR_PORT);
+        sprinklerValveSolenoid = new Solenoid(RobotMap.PNEU_SPRINKLER_VALVE_SOL_PORT);
+        frontChamberSolenoid = new Solenoid(RobotMap.PNEU_FRONT_CHAMBER_SOL_PORT);
+        shellEjectorSolenoid = new Solenoid(RobotMap.PNEU_SHELL_EJECTOR_SOL_PORT);
+        chargeCannonTankSolenoid = new Solenoid(RobotMap.PNEU_CHARGE_CANNON_SOL_PORT);
 
         compressor.setClosedLoopControl(false);
         setSingleSolenoid(sprinklerValveSolenoid, false);
         setSingleSolenoid(frontChamberSolenoid, false);
+        setSingleSolenoid(shellEjectorSolenoid, false);
         setSingleSolenoid(chargeCannonTankSolenoid, false);
     }
 
@@ -67,6 +71,7 @@ public class Pneumatics extends Subsystem {
         return compressor.getPressureSwitchValue();
     }
 
+
     public static Solenoid getSprinklerValveSolenoid() {
         return sprinklerValveSolenoid;
     }
@@ -78,6 +83,11 @@ public class Pneumatics extends Subsystem {
     public static Solenoid getChargeCannonTankSolenoid() {
         return chargeCannonTankSolenoid;
     }
+
+    public static Solenoid getShellEjectorSolenoid() {
+        return shellEjectorSolenoid;
+    }
+
 
     public static void setSingleSolenoid(Solenoid solenoid, boolean state) {
         System.out.println(solenoid.get());

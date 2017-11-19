@@ -3,11 +3,15 @@ package org.whsrobotics.tshirtcannon2017.robot;
 import edu.wpi.first.wpilibj.IterativeRobot;
 import edu.wpi.first.wpilibj.command.Scheduler;
 import org.whsrobotics.tshirtcannon2017.commands.GetStatus;
+import org.whsrobotics.tshirtcannon2017.subsystems.DriveTrain;
 import org.whsrobotics.tshirtcannon2017.subsystems.Pneumatics;
+import org.whsrobotics.tshirtcannon2017.utils.MultiCamera;
 
 public class Robot extends IterativeRobot {
 
     public static Pneumatics pneumatics;
+    public static DriveTrain driveTrain;
+    public static MultiCamera multiCamera;
     public static OI oi;
 
     GetStatus getStatus;
@@ -27,6 +31,8 @@ public class Robot extends IterativeRobot {
         RobotMap.init();
 
         pneumatics = Pneumatics.getInstance();
+        driveTrain = DriveTrain.getInstance();
+        multiCamera = MultiCamera.getInstance(1);
         oi = new OI();
 
         getStatus = new GetStatus();
