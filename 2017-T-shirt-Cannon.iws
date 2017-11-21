@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4787b70d-249a-4723-b7db-3d8179609148" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/whsrobotics/tshirtcannon2017/commands/CGPneumaticsShoot.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2017-T-shirt-Cannon.iws" afterPath="$PROJECT_DIR$/2017-T-shirt-Cannon.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/whsrobotics/tshirtcannon2017/commands/CGPneumaticsShoot.java" afterPath="$PROJECT_DIR$/src/main/java/org/whsrobotics/tshirtcannon2017/commands/CGPneumaticsShoot.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/whsrobotics/tshirtcannon2017/commands/GetStatus.java" afterPath="$PROJECT_DIR$/src/main/java/org/whsrobotics/tshirtcannon2017/commands/GetStatus.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/whsrobotics/tshirtcannon2017/commands/TimedSolenoid.java" afterPath="$PROJECT_DIR$/src/main/java/org/whsrobotics/tshirtcannon2017/commands/TimedSolenoid.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/whsrobotics/tshirtcannon2017/robot/OI.java" afterPath="$PROJECT_DIR$/src/main/java/org/whsrobotics/tshirtcannon2017/robot/OI.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/whsrobotics/tshirtcannon2017/utils/MultiCamera.java" afterPath="$PROJECT_DIR$/src/main/java/org/whsrobotics/tshirtcannon2017/utils/MultiCamera.java" />
     </list>
@@ -76,33 +75,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="OI.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/whsrobotics/tshirtcannon2017/robot/OI.java">
+      <file leaf-file-name="CGPneumaticsShoot.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/whsrobotics/tshirtcannon2017/commands/CGPneumaticsShoot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GetStatus.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/whsrobotics/tshirtcannon2017/commands/GetStatus.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="40" lean-forward="false" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DriveTrain.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/whsrobotics/tshirtcannon2017/subsystems/DriveTrain.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="6" column="55" lean-forward="false" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
+            <state relative-caret-position="420">
+              <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -615,10 +592,10 @@
         <option value="$PROJECT_DIR$/src/main/java/org/whsrobotics/tshirtcannon2017/subsystems/Pneumatics.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/whsrobotics/tshirtcannon2017/robot/Robot.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/whsrobotics/tshirtcannon2017/commands/TimedSolenoid.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/whsrobotics/tshirtcannon2017/commands/GetStatus.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/whsrobotics/tshirtcannon2017/commands/CGPneumaticsShoot.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/whsrobotics/tshirtcannon2017/robot/OI.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/whsrobotics/tshirtcannon2017/utils/MultiCamera.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/whsrobotics/tshirtcannon2017/commands/GetStatus.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/whsrobotics/tshirtcannon2017/commands/CGPneumaticsShoot.java" />
       </list>
     </option>
   </component>
@@ -638,8 +615,8 @@
     <option name="LAST_EDITED_MODULE_NAME" />
     <option name="LAST_EDITED_TAB_NAME" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="35" />
     <option name="y" value="23" />
     <option name="width" value="1405" />
     <option name="height" value="877" />
@@ -727,6 +704,15 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="tshirtcannon2017" type="462c0819:PsiDirectoryNode" />
               <item name="subsystems" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="2017-T-shirt-Cannon" type="b2602c69:ProjectViewProjectNode" />
+              <item name="2017-T-shirt-Cannon" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tshirtcannon2017" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -987,7 +973,7 @@
       <workItem from="1511129391316" duration="27000" />
       <workItem from="1511129448734" duration="214000" />
       <workItem from="1511208301874" duration="1162000" />
-      <workItem from="1511276520702" duration="2303000" />
+      <workItem from="1511276520702" duration="6046000" />
     </task>
     <task id="LOCAL-00001" summary="Initial structure commit">
       <created>1508086588510</created>
@@ -1052,14 +1038,21 @@
       <option name="project" value="LOCAL" />
       <updated>1511106850054</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Add CGPneumaticsShoot to call other commands with a single command. Add try/catch to camera init.">
+      <created>1511279218437</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1511279218437</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45861000" />
+    <option name="totallyTimeSpent" value="49604000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="35" y="23" width="1405" height="877" extended-state="6" />
+    <frame x="35" y="23" width="1405" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1144,7 +1137,8 @@
     <MESSAGE value="Add ChargeCannonTankSolenoid" />
     <MESSAGE value="Fix TimedSolenoid. Switch the solenoid channels for the PCM." />
     <MESSAGE value="Added DriveTrain and MultiCamera code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added DriveTrain and MultiCamera code" />
+    <MESSAGE value="Add CGPneumaticsShoot to call other commands with a single command. Add try/catch to camera init." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add CGPneumaticsShoot to call other commands with a single command. Add try/catch to camera init." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1152,34 +1146,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/whsrobotics/tshirtcannon2017/commands/StopCompressor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="23" column="5" lean-forward="false" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/whsrobotics/tshirtcannon2017/commands/StartCompressor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="21" column="37" lean-forward="false" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/whsrobotics/tshirtcannon2017/robot/OI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/whsrobotics/tshirtcannon2017/robot/Robot.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1405,13 +1371,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/edu.wpi.first.wpilibj/athena/2017.2.1/38c75d30d3cd6bd44be358c16a543cf664b8d4a1/athena-2017.2.1-sources.jar!/edu/wpi/first/wpilibj/command/Command.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="129" column="4" lean-forward="false" selection-start-line="129" selection-start-column="4" selection-end-line="129" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/edu.wpi.first.wpilibj/athena/2017.2.1/38c75d30d3cd6bd44be358c16a543cf664b8d4a1/athena-2017.2.1-sources.jar!/edu/wpi/first/wpilibj/command/InstantCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -1444,26 +1403,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/whsrobotics/tshirtcannon2017/utils/XboxController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/whsrobotics/tshirtcannon2017/commands/DriveManual.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="22" column="63" lean-forward="false" selection-start-line="22" selection-start-column="63" selection-end-line="22" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/whsrobotics/tshirtcannon2017/commands/SetSingleSolenoid.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -1480,34 +1419,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/whsrobotics/tshirtcannon2017/subsystems/DriveTrain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="6" column="55" lean-forward="false" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/whsrobotics/tshirtcannon2017/commands/GetStatus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="40" lean-forward="false" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/whsrobotics/tshirtcannon2017/commands/CGPneumaticsShoot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/edu.wpi.first.wpilibj/athena/2017.2.1/38c75d30d3cd6bd44be358c16a543cf664b8d4a1/athena-2017.2.1-sources.jar!/edu/wpi/first/wpilibj/CameraServer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="326">
@@ -1515,16 +1426,6 @@
           <folding>
             <element signature="e#18436#18437#0" expanded="true" />
             <element signature="e#18512#18513#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/whsrobotics/tshirtcannon2017/utils/MultiCamera.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="39" column="9" lean-forward="true" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1559,10 +1460,100 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/whsrobotics/tshirtcannon2017/subsystems/DriveTrain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/edu.wpi.first.wpilibj/athena/2017.2.1/38c75d30d3cd6bd44be358c16a543cf664b8d4a1/athena-2017.2.1-sources.jar!/edu/wpi/first/wpilibj/NamedSendable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/edu.wpi.first.wpilibj/athena/2017.2.1/38c75d30d3cd6bd44be358c16a543cf664b8d4a1/athena-2017.2.1-sources.jar!/edu/wpi/first/wpilibj/command/CommandGroup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-881">
+          <caret line="31" column="37" lean-forward="true" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/edu.wpi.first.wpilibj/athena/2017.2.1/38c75d30d3cd6bd44be358c16a543cf664b8d4a1/athena-2017.2.1-sources.jar!/edu/wpi/first/wpilibj/command/Command.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="93" column="9" lean-forward="false" selection-start-line="93" selection-start-column="9" selection-end-line="93" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/whsrobotics/tshirtcannon2017/commands/GetStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/whsrobotics/tshirtcannon2017/utils/XboxController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="147" column="22" lean-forward="false" selection-start-line="147" selection-start-column="22" selection-end-line="147" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/whsrobotics/tshirtcannon2017/robot/OI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state relative-caret-position="105">
+          <caret line="7" column="17" lean-forward="true" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/whsrobotics/tshirtcannon2017/commands/DriveManual.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/whsrobotics/tshirtcannon2017/commands/TimedXboxRumble.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="28" lean-forward="false" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/whsrobotics/tshirtcannon2017/utils/MultiCamera.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/whsrobotics/tshirtcannon2017/commands/CGPneumaticsShoot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -33,7 +33,7 @@ public class MultiCamera extends Subsystem {
 
             try {
                 addCamera();
-            } catch (java.lang.Exception ex) {
+            } catch (NullPointerException ex) {
                 System.err.println("Error adding Camera.");
             }
 

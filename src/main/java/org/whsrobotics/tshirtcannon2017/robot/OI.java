@@ -12,6 +12,8 @@ public class OI {
     public OI() {
         xboxController = new XboxController(0);
         xboxController.getButton(XboxController.Buttons.A).whenPressed(new CGPneumaticsShoot());
+        xboxController.getButton(XboxController.Buttons.LEFT_BUMPER).whenPressed(new StopCompressor());
+        xboxController.getButton(XboxController.Buttons.RIGHT_BUMPER).whenPressed(new StartCompressor());
 
         //TODO: Bind Commands to Controller!!!
         SmartDashboard.putData(new StartCompressor());
