@@ -1,10 +1,7 @@
 package org.whsrobotics.tshirtcannon2017.robot;
 
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
-import org.whsrobotics.tshirtcannon2017.commands.SetSingleSolenoid;
-import org.whsrobotics.tshirtcannon2017.commands.StartCompressor;
-import org.whsrobotics.tshirtcannon2017.commands.StopCompressor;
-import org.whsrobotics.tshirtcannon2017.commands.TimedSolenoid;
+import org.whsrobotics.tshirtcannon2017.commands.*;
 import org.whsrobotics.tshirtcannon2017.subsystems.Pneumatics;
 import org.whsrobotics.tshirtcannon2017.utils.XboxController;
 
@@ -14,14 +11,20 @@ public class OI {
 
     public OI() {
         xboxController = new XboxController(0);
+        xboxController.getButton(XboxController.Buttons.A).whenPressed(new CGPneumaticsShoot());
 
+        //TODO: Bind Commands to Controller!!!
         SmartDashboard.putData(new StartCompressor());
         SmartDashboard.putData(new StopCompressor());
+
+        SmartDashboard.putData(new CGPneumaticsShoot());
+
+
+        // Extra Commands
 
         SmartDashboard.putData("Sprinkler Valve Solenoid - START", new SetSingleSolenoid(Pneumatics.getSprinklerValveSolenoid(), true));
         SmartDashboard.putData("Sprinkler Valve Solenoid - STOP", new SetSingleSolenoid(Pneumatics.getSprinklerValveSolenoid(), false));
 
-        // Should open and close the sprinkler valve according to the timeout.
         SmartDashboard.putData("Sprinkler Valve Solenoid - TIMED 0.5 SEC", new TimedSolenoid(Pneumatics.getSprinklerValveSolenoid(), 0.5));
 
         SmartDashboard.putData("Front Chamber Solenoid - START", new SetSingleSolenoid(Pneumatics.getFrontChamberSolenoid(), true));

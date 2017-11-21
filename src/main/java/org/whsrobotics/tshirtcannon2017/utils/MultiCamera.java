@@ -28,10 +28,15 @@ public class MultiCamera extends Subsystem {
         cameras = new ArrayList<>(numberOfCameras);
 
         System.out.println("Initializing CameraServer...");
-        server = CameraServer.getInstance();
 
         for (int i = 0; i < numberOfCameras; i++) {
-            addCamera();
+
+            try {
+                addCamera();
+            } catch (java.lang.Exception ex) {
+                System.err.println("Error adding Camera.");
+            }
+
         }
     }
 

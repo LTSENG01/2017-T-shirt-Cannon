@@ -1,6 +1,5 @@
 package org.whsrobotics.tshirtcannon2017.commands;
 
-import edu.wpi.first.wpilibj.Compressor;
 import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import org.whsrobotics.tshirtcannon2017.subsystems.Pneumatics;

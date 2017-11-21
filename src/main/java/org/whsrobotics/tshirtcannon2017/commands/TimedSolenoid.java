@@ -1,7 +1,6 @@
 package org.whsrobotics.tshirtcannon2017.commands;
 
 import edu.wpi.first.wpilibj.Solenoid;
-import edu.wpi.first.wpilibj.command.Scheduler;
 import edu.wpi.first.wpilibj.command.TimedCommand;
 import org.whsrobotics.tshirtcannon2017.robot.Robot;
 import org.whsrobotics.tshirtcannon2017.subsystems.Pneumatics;
